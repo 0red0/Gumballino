@@ -1,0 +1,75 @@
+# mkdir src
+# touch index.js <console>
+# touch index.html <in src>
+# npm init -y <in terminal>
+# npm i lodash <js library>
+# npm i --save-dev webpack webpack-cli
+# package.json >> scripts{ "build" : "webpack", }
+# npm run build <creates dist>
+# rewrite script tag in html
+# touch webpack.config.js <config it>
+--------------------------------------------
+const path = require('path');
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),  },
+  module: {
+    rules: [     {
+      test: /\.s?[ac]ss$/,
+      use: ['style-loader', 'css-loader', 'sass-loader']  },],},
+  mode: 'development',
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist', },};
+----------------------------------
+# create style.scss + import to js
+# npm i --save-dev css-loader style-loader
+# npm install sass-loader sass webpack --save-dev
+# npx webpack
+# npm i --save-dev webpack-dev-server
+	Ctrl+C >> to stop -w
+
+
+X  --no-watch
+X --watch-options-stdin    => stop server
+
+X git subtree push --prefix dist origin gh-pages
+	for the index.html directory as main
+X Useful links:
+Module Bundlers Explained... fireShip
+X Q&A
+      = what are webpack plugins ?
+
+________________________________
+package.json
+--------------------------------
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.2",
+    "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
+
+---------------------------------
