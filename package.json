@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^6.7.2",
+    "html-loader": "^4.2.0",
     "sass": "^1.56.2",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
