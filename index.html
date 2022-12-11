@@ -12,9 +12,40 @@
 <body>
    <main>
       <section class="home">
-         <div class="img-holder">
-            <img src="./imgs/gum1.png" alt="cover image">
+         <div class="home-overlay">
+            <canvas class="confetti" id="canvas"></canvas>
+            <img src="./imgs/welcome.png" alt="welcome message">
          </div>
+         <div class="wall">
+            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+         </div>
+
+         <img src="./imgs/title5.png" alt="title" class="title">
+
+         <div class="img-holder">
+            <div class="bg"></div>
+         </div>
+
+         <a class="menu-holder wiggle" href="#menu">
+            <div class="menu-box">
+               <img src="./imgs/meals.png" alt="meals page">
+            </div>
+            <img src="./imgs/menu-text.png" alt="" class="menu-text">
+         </a>
+
+         <a class="burger-holder wiggle" href="#about">
+            <div class="burger-box">
+               <img src="./imgs/burger.png" alt="burger">
+            </div>
+            <img src="./imgs/about-text.png" alt="" class="burger-text">
+         </a>
+         <audio id="horn" autoplay>
+            <source src="./audio/party-horn.wav">
+            Your browser does not support the html audio tag.
+         </audio>
       </section>
    </main>
 </body>
