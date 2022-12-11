@@ -1,11 +1,162 @@
+$blue-A: #7164a9;
+$blue-B: #da6abf;
+$blue-C: #94bec6;
+
 .home {
-   .img-holder {
+   position: relative;
+   .wall {
+      position: fixed;
+      display: flex;
+      z-index: -1;
+   }
+   .title {
+      position: absolute;
+      top: -35px;
       width: 100%;
+      margin: 0 auto;
+   }
+   .img-holder {
+      .bg {
+         height: 100vh;
+         background-image: url("/dist/imgs/gum1.png");
+         background-position: center bottom;
+         background-repeat: no-repeat;
+      }
+   }
+   .menu-holder {
+      cursor: pointer;
+      position: absolute;
+      top: 14%;
+      left: 58%;
+      z-index: 1;
+      .menu-box {
+         position: relative;
+         z-index: 2;
+         &::before {
+            content: "";
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%) translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            box-shadow: 0px 20px 20px 20px #181818;
+            border-radius: 50%;
+            z-index: -1;
+         }
+         img {
+            width: 120px;
+            z-index: 4;
+         }
+      }
+      .menu-text {
+         position: absolute;
+         bottom: -25%;
+         width: 100%;
+         margin: 0 auto;
+         z-index: 2;
+      }
+      &.wiggle {
+         display: inline-block;
+         animation: wiggle 5s infinite;
+         &:hover {
+            scale: 1.05;
+            animation: none;
+            .menu-box::before {
+               box-shadow: 0px 20px 20px 24px #181818;
+            }
+         }
+      }
+   }
+   .burger-holder {
+      cursor: pointer;
+      position: absolute;
+      top: 60%;
+      left: 8%;
+      z-index: 1;
+      .burger-box {
+         position: relative;
+         z-index: 2;
+         &::before {
+            content: "";
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%) translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            box-shadow: 0px 20px 20px 20px #181818;
+            border-radius: 50%;
+            z-index: -1;
+         }
+         img {
+            width: 120px;
+            z-index: 4;
+         }
+      }
+      .burger-text {
+         position: absolute;
+         bottom: -25%;
+         width: 100%;
+         margin: 0 auto;
+         z-index: 2;
+      }
+      &.wiggle {
+         display: inline-block;
+         animation: wiggle 5s infinite 1s;
+         &:hover {
+            scale: 1.05;
+            animation: none;
+            .burger-box::before {
+               box-shadow: 0px 20px 20px 24px #181818;
+            }
+         }
+      }
+   }
+   .home-overlay {
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.212);
+      width: 100vw;
       height: 100vh;
-      background-color: yellowgreen;
-      // background-image: url("../imgs/gum3.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      z-index: 6;
+      opacity: 1;
+      transition: 0.5s;
+      &.hide {
+         opacity: 0;
+      }
+      &.none {
+         display: none;
+      }
+      .confetti {
+         user-select: none;
+      }
+      img {
+         position: absolute;
+         margin: auto;
+         left: 50%;
+         top: 50%;
+         text-align: center;
+         transform: translate(-50%, -50%);
+      }
+   }
+}
+
+@keyframes wiggle {
+   0% {
+      transform: rotate(0deg);
+   }
+   80% {
+      transform: rotate(0deg);
+   }
+   85% {
+      transform: rotate(5deg);
+   }
+   95% {
+      transform: rotate(-5deg);
+   }
+   100% {
+      transform: rotate(0deg);
    }
 }
