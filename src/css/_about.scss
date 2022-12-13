@@ -1,0 +1,86 @@
+#about {
+   // display: none;
+   position: relative;
+
+   nav {
+      position: relative;
+      .nav-image {
+         position: absolute;
+         top: 50%;
+         left: 3%;
+         transform: translateY(-50%);
+         max-width: clamp(3rem, 20vw, 15rem);
+         z-index: 6;
+         img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px #333;
+         }
+      }
+      .nav-bar {
+         width: 76%;
+         height: 70px;
+         margin: 50px auto;
+         padding: 5px;
+         background-color: rgb(255, 166, 0);
+         border-radius: 20px;
+         ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            li {
+               position: relative;
+               img {
+                  position: relative;
+                  width: 160px;
+                  height: 53px;
+                  z-index: 2;
+               }
+               &::before {
+                  content: "";
+                  position: absolute;
+                  bottom: 4px;
+                  left: 0;
+                  width: 150px;
+                  height: 20px;
+                  border-radius: 50%;
+                  opacity: 0.3;
+                  z-index: 1;
+                  background-color: rgba(0, 0, 255, 0.479);
+               }
+               &:hover::before {
+                  background-color: blue;
+               }
+            }
+         }
+      }
+   }
+
+   .background {
+      width: 76%;
+      margin: auto;
+      padding: 50px;
+      background-color: #7164a9d5;
+      border-radius: 20px;
+      .box {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         gap: 50px;
+         margin: auto;
+         p {
+            flex: 1 1 50%;
+            font-size: 1.5rem;
+            color: white;
+         }
+         .image {
+            flex: 1 1 80%;
+            img {
+               box-shadow: 0 2px 7px #333;
+               border-radius: 20px;
+               max-width: 100%;
+            }
+         }
+      }
+   }
+}

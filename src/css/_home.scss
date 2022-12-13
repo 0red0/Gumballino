@@ -3,12 +3,8 @@ $blue-B: #da6abf;
 $blue-C: #94bec6;
 
 #home {
+   display: none;
    position: relative;
-   .wall {
-      position: fixed;
-      display: flex;
-      z-index: -1;
-   }
    .title {
       position: absolute;
       top: -35px;
