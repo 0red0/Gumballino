@@ -10,19 +10,20 @@
 </head>
 
 <body>
+
+   <div class="wall">
+      <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+      <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+      <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+      <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
+   </div>
+
    <main>
       <section id="home">
 
          <div class="home-overlay">
             <canvas class="confetti" id="canvas"></canvas>
             <img src="./imgs/welcome.png" alt="welcome message">
-         </div>
-
-         <div class="wall">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
          </div>
 
          <img src="./imgs/title5.png" alt="title" class="title">
@@ -44,20 +45,14 @@
             </div>
             <img src="./imgs/about-text.png" alt="" class="burger-text">
          </a>
+
          <audio id="horn" autoplay>
             <source src="./audio/party-horn.wav">
             Your browser does not support the html audio tag.
          </audio>
       </section>
 
-      <div id="menu">
-         <div class="wall">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
-            <img src="./imgs/gum-wll1.png" alt="background image" class="wallpaper1">
-         </div>
-
+      <section id="menu">
          <div class="slider">
             <ul>
                <li><img src="./imgs/food (1).jpg"><img src="./imgs/title5.png" alt=""></li>
@@ -71,7 +66,56 @@
             <!-- right -->
             <button></button>
          </div>
-      </div>
+
+         <a class="goto-home wiggle" href="#home">
+            <div class="menu-box">
+               <img src="./imgs/homePage.png" alt="HOME page">
+            </div>
+            <img src="./imgs/HOME.png" alt="" class="menu-text">
+         </a>
+
+         <a class="burger-holder wiggle" href="#about">
+            <div class="burger-box">
+               <img src="./imgs/burger.png" alt="burger">
+            </div>
+            <img src="./imgs/about-text.png" alt="" class="burger-text">
+         </a>
+      </section>
+
+      <section id="about">
+
+         <nav>
+            <div class="nav-image">
+               <img src="./imgs/homePage.png" alt="family photo">
+            </div>
+
+            <div class="nav-bar">
+               <ul>
+                  <li><a href="#home" class="goto-home"><img src="./imgs/HOME.png" alt=""></a></li>
+                  <li><a href="#menu" class="menu-holder"><img src="./imgs/menu-text.png" alt=""></a></li>
+                  <li><a href="#about"><img src="./imgs/about-text.png" alt=""></a></li>
+               </ul>
+            </div>
+
+         </nav>
+
+         <div class="background">
+
+            <div class="box">
+               <p>Food Is Our Common Ground, A Universal Experience. You Don’t Need A Silver Fork To Eat Good Food.
+                  There Is No Sincerer Love Than The Love Of Food.</p>
+               <div class="image">
+                  <img src="./imgs/elmoreTown.png" alt="town image">
+               </div>
+            </div>
+
+            <div class="image">
+               <img src="./imgs/food (1).jpg" alt="">
+            </div>
+
+         </div>
+
+      </section>
    </main>
 </body>
 
