@@ -1,9 +1,13 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
    entry: "./src/main.js",
    output: {
       filename: "index.js",
       path: path.resolve(__dirname, "dist"),
+      assetModuleFilename: "[name][ext]",
+      clean: true,
    },
    module: {
       rules: [
@@ -21,6 +25,13 @@ module.exports = {
          // },
       ],
    },
+   plugins: [
+      new HtmlWebpackPlugin({
+         title: "Gumballino's",
+         filename: "index.html",
+         template: "./src/template.html",
+      }),
+   ],
    mode: "development",
    devtool: "inline-source-map",
    devServer: {
