@@ -4,6 +4,11 @@ $blue-C: #94bec6;
 
 #home {
    position: relative;
+   display: flex;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
    .title {
       position: absolute;
       top: -35px;
@@ -11,12 +16,6 @@ $blue-C: #94bec6;
       margin: 0 auto;
    }
    .img-holder {
-      // .bg {
-      //    height: 100vh;
-      //    background-image: url("gum1.png");
-      //    background-position: center bottom;
-      //    background-repeat: no-repeat;
-      // }
    }
    .menu-holder {
       cursor: pointer;
