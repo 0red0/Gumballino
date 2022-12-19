@@ -168,7 +168,7 @@
       }
       &.wiggle {
          display: inline-block;
-         animation: wiggle 5s infinite;
+         animation: wiggle 3s infinite;
          &:hover {
             scale: 1.05;
             animation: none;
@@ -214,7 +214,7 @@
       }
       &.wiggle {
          display: inline-block;
-         animation: wiggle 5s infinite 1s;
+         animation: wiggle 3s infinite 1s;
          &:hover {
             scale: 1.05;
             animation: none;
