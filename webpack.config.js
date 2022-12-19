@@ -23,6 +23,10 @@ module.exports = {
          //    test: /\.html$/i,
          //    loader: "html-loader",
          // },
+         {
+            test: /\.html$/,
+            use: ["html-loader"],
+         },
       ],
    },
    plugins: [
