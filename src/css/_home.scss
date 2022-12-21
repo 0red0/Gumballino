@@ -4,18 +4,18 @@ $blue-C: #94bec6;
 
 #home {
    position: relative;
-   display: flex;
-   justify-content: center;
-   justify-items: center;
-   align-items: center;
-   align-content: center;
+   height: 100vh;
+   .img-holder {
+      position: absolute;
+      margin-top: 10px;
+      left: 50%;
+      transform: translate(-50%);
+   }
    .title {
       position: absolute;
       top: -35px;
       width: 100%;
       margin: 0 auto;
-   }
-   .img-holder {
    }
    .menu-holder {
       cursor: pointer;

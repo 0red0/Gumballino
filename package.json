@@ -1,6 +1,7 @@
 {
-   "name": "webpack-test",
+   "name": "Gumballino",
    "version": "1.0.0",
+   "description": "Visit Restaurant Page:- https://0red0.github.io/Gumballino/",
    "main": "index.js",
    "scripts": {
       "build": "webpack",
@@ -10,7 +11,7 @@
    },
    "keywords": [],
    "author": "",
-   "license": "MIT",
+   "license": "ISC",
    "devDependencies": {
       "css-loader": "^6.7.2",
       "gh-pages": "^4.0.0",
@@ -33,6 +34,5 @@
    "bugs": {
       "url": "https://github.com/0red0/Gumballino/issues"
    },
-   "homepage": "https://github.com/0red0/Gumballino#readme",
-   "description": ""
+   "homepage": "https://github.com/0red0/Gumballino#readme"
 }
